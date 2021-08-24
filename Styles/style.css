@@ -1245,8 +1245,9 @@ nav #Blank {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-filter: url("#turbulence");
-          filter: url("#turbulence");
+  /*
+  filter: url("#turbulence");
+  */
 }
 
 #section3 #Overlay_side .circle_holder {
@@ -1282,9 +1283,9 @@ nav #Blank {
 #section3 #Overlay_side #circle4 {
   aspect-ratio: unset;
   height: 70vh;
-  width: 48vw;
+  width: 40vw;
   right: 11vw;
-  bottom: 15vh;
+  bottom: 13vh;
 }
 
 #section3 #Overlay_side #circle5 {
@@ -1315,9 +1316,9 @@ nav #Blank {
   aspect-ratio: unset;
   height: 7vw;
   width: 7vw;
-  bottom: 15vh;
+  bottom: 10vh;
   margin-bottom: 5rem;
-  left: 38vw;
+  left: 43vw;
   -webkit-transition: margin-bottom 1.3s cubic-bezier(0.25, 0, 0, 1);
   transition: margin-bottom 1.3s cubic-bezier(0.25, 0, 0, 1);
 }
