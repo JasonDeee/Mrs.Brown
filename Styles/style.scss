@@ -432,12 +432,17 @@ nav #Blank {
   background: linear-gradient(-60deg, #e930e3, #ff25427a 40%, #f2712100 58%);
   transform: translateX(-4vw) rotate(27deg);
 }
+
+/*
+
 #sec2_decor #dc1 {
   animation: sec2_dc1 5s ease-in-out infinite alternate;
 }
 #sec2_decor #dc2 {
   animation: sec2_dc2 5s ease-in-out infinite alternate;
 }
+
+*/
 #sec2_decor #line {
   background: #e9e7e7;
   height: 5px;
@@ -801,6 +806,7 @@ nav #Blank {
   flex-direction: column;
   justify-content: flex-end;
   align-items: flex-start;
+  pointer-events: none;
 
   #Sec3_des_box {
     position: relative;
@@ -817,7 +823,7 @@ nav #Blank {
   position: absolute;
   width: 100%;
   height: auto;
-  padding-left: 11vw;
+  padding-left: 13vw;
   padding-right: 15vw;
   opacity: 0%;
   bottom: 0;
@@ -870,8 +876,8 @@ nav #Blank {
   display: flex;
   flex-direction: column;
   position: relative;
-  width: 120vw;
-  height: 160vh;
+  width: 100vw;
+  height: 100vw;
   align-items: center;
   justify-content: center;
   filter: blur(25px);
@@ -908,22 +914,26 @@ nav #Blank {
 #section3 #Overlay_side #circle1 {
   right: 6vw;
   top: 10vw;
+  animation: circle1 5s cubic-bezier(0.75, 0, 0, 1) 0s infinite alternate;
 }
 #section3 #Overlay_side #circle2 {
-  width: 11vw;
-  right: 5vw;
-  bottom: 2vh;
+  width: 17vw;
+  right: 10vw;
+  bottom: 6vh;
+
+  animation: circle2 3s cubic-bezier(0.75, 0, 0, 1) 0s infinite alternate;
 }
 #section3 #Overlay_side #circle3 {
   right: 18vw;
   top: 10vh;
+  animation: circle3 4s cubic-bezier(0.75, 0, 0, 1) 0s infinite alternate;
 }
 #section3 #Overlay_side #circle4 {
   aspect-ratio: unset;
   height: 70vh;
   width: 40vw;
-  right: 11vw;
-  bottom: 13vh;
+  right: 11.5vw;
+  bottom: 12vh;
 }
 #section3 #Overlay_side #circle5 {
   aspect-ratio: unset;
@@ -941,11 +951,12 @@ nav #Blank {
 }
 #section3 #Overlay_side #circle7 {
   aspect-ratio: unset;
-  height: 12vw;
+  height: 9vw;
   width: 12vw;
   left: 13vw;
   bottom: 2vh;
 }
+
 #section3 #Overlay_side #Active_Circle {
   aspect-ratio: unset;
   height: 7vw;
@@ -961,10 +972,49 @@ nav #Blank {
   0% {
     right: 8%;
     bottom: 35%;
+
+    left: 13vw;
+    bottom: 2vh;
   }
   100% {
-    right: 15%;
-    bottom: 28%;
+    left: 13vw;
+    bottom: 2vh;
+  }
+}
+@keyframes circle1 {
+  0% {
+    right: 10vw;
+    top: 10vw;
+  }
+
+  100% {
+    right: 4vw;
+    top: 13vw;
+  }
+}
+
+@keyframes circle2 {
+  0% {
+    width: 10vw;
+    right: 11vw;
+    bottom: 11vh;
+  }
+
+  100% {
+    width: 17vw;
+    right: 10vw;
+    bottom: 6vh;
+  }
+}
+@keyframes circle3 {
+  0% {
+    right: 18vw;
+    top: 10vh;
+  }
+
+  100% {
+    right: 25vw;
+    top: 12vh;
   }
 }
 
